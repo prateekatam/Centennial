@@ -1,0 +1,9 @@
+In the order of starting (see individual modules for instructions):
+
+Shearer [/shearer] <Python>: The Shearer (shearer.py) in the mine. It is mounted with an API module (shearer_api.py) that can respond with the shearer position.
+
+Monitor [/shearerMonitor] <Python>: External program (monitor.py) that monitors the status of the shearer by pinging the API and writing it to the database.
+
+Back-end [/shearerpos] <NodeJS>: The Back-end program (index.js) that front-end pings for data.
+
+Front-end [/real-time-chart-starter] <ReactJS>: The Front-end (index.js) client that displays the position of the Shearer. 
